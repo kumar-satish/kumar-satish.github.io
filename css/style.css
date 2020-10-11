@@ -1,0 +1,126 @@
+
+  * {box-sizing: border-box;}
+
+
+  body{
+      background: white;
+  }
+
+ 
+  
+
+
+  .header1{
+      background: #003366;
+  }
+
+  .header-font{
+      font-size: 30px;
+      font-family: Bradley Hand, cursive;
+      color: white;
+  }
+
+  .navbar{
+      padding: 0px 30px;
+  }
+
+  .nav-link{
+      color:white;
+      font-size: 17px;
+      font-family: 'Trebuchet MS';
+      text-align: center;
+  }
+
+  .nav-link:hover{
+      background-color: white;
+      color: #003366;
+  }
+
+
+
+  /* profile header for home */
+
+  .profile-header{
+      color: white;
+      font-size: 15px;
+      font-family: 'Trebuchet MS';
+  }
+
+.container-background{
+    height: auto;
+    width: 85%;
+    background-color: teal;
+}
+
+
+.text-property{
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+    color: black;
+    text-align: justify;
+}
+
+
+
+/* Research publication and news */
+
+.bone {
+    
+    border-style: solid;
+    border-color: #003366;
+    
+    
+  }
+
+  .container-rpn {
+    height: auto;
+    width: 85%;
+    background-color: white ;
+    
+
+  }
+
+  .ctnheading {
+    height: 30px;
+    background-color: #003366 ;
+    color: white;
+
+  }
+
+  /* Responsive text */
+
+  h2.responsive-htext{
+
+    font-size: 10vw;
+  }
+
+  p.responsive-ptext{
+      text-align: justify;
+  }
+
+  .container-size{
+      width: 85%;
+      height: auto;
+  }
+
+  .paperhead{
+
+    background-color: teal;
+    color: white;
+  }
+
+  .footer {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: black;
+    text-align: center;
+ }
+
+ a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
