@@ -22,7 +22,7 @@
     10. Footer Section
     11. Realtor Portfolio 
     12. Photo Gallery Widgets
-    13. Table Widget
+    13. Table Widgetvb b  
     14. Pricing Widget
     15. Events Widget
     16. Discography Widget
@@ -32,7 +32,7 @@
 
 .active{color: #425cbb !important;}
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Glegoo';
     background:#fafafa;
     overflow-x: hidden;
     position: relative;
@@ -109,7 +109,7 @@ hr{
 }
 
 .cbp-l-loadMore-link.site-btn{
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Glegoo' !important;
     font-size: 14px !important;
     font-weight: 500 !important;
     border: 0 !important;
@@ -1023,7 +1023,8 @@ ul.timeline{
 #blog .blog-box span.date{
     color: #505050 !important;
     font-size: 11px;
-    font-family: arial;
+    font-family:'Glegoo';
+    ;
 }
 
 #blog .blog-box .title{
