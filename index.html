@@ -183,6 +183,69 @@
     font-size: 11px
 }
 
+* {box-sizing: border-box;}
+body {font-family: 'Glegoo';}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
     </style>
 
     <!-- Google Web fonts
@@ -345,26 +408,54 @@ font-family: 'Exo 2', sans-serif; font-family: 'Ubuntu', sans-serif;
                             <div id="home1" class="example">
                                 <!-- Text Section -->
 
+
+                                <div class="row">
+                                    <section class="about-me line   col-md-12 padding_30 padbot_45">
+                                        <div class="col-lg-12 ">
+                                        
+                                            <div class="slideshow-container">
+                                                <div class="mySlides fade">
+                                                  <div class="numbertext">1 / 3</div>
+                                                  <img src="images/debtcom.png" style="width:100%">
+                                                </div>
+                                                <div class="mySlides fade">
+                                                  <div class="numbertext">2 / 3</div>
+                                                  <img src="images/affinity.png" style="width:100%">
+                                                </div>  
+                                                <div class="mySlides fade">
+                                                  <div class="numbertext">3 / 3</div>
+                                                  <img src="images/datesso.png" style="width:100%"> 
+                                                </div>
+                                                <div style="text-align:center">
+                                                  <span class="dot"></span> 
+                                                  <span class="dot"></span> 
+                                                  <span class="dot"></span> 
+                                                </div>
+                                            </div>                                           
+                                        </div>
+                                    </section>
+                                </div>
+
                                 <div class="row">
                                     <section class="about-me line   col-md-12 padding_30 padbot_45">
                                         <div class="col-lg-12 ">
 
                                             <div ><p style="font-size: 180%; font-family: 'Lucida Handwriting';">Imagination is the highest form of research</p><br><p style="font-family:'Lucida Handwriting';margin-left: 15cm;">By Albert Einstein</p></div>
-                                            <p><br>I am a lecturer in Software Engineering at the School of Built Environment, Engineering 
-						    and Computing, Leeds Beckett University, Leeds, UK. Before his current position, 
-						    I was a research fellow at the School of Computing, University of Leeds, Leeds,
-						    UK. I have earned both Master and PhD degrees in computer science from Madan Mohan Malaviya University of Technology, India and the University of Birmingham, UK, respectively. 
-						    Prior to pursuing my PhD, I gained valuable experience as a Lecturer at IMS College
-						    Ghaziabad and a Teaching Staff (full-time guest faculty) at Gautam Buddha
-						    University, India.</p> <br>
+                                               <p><br>I am a lecturer in Software Engineering at the School of Built Environment, Engineering 
+						                       and Computing, Leeds Beckett University, Leeds, UK. Before his current position, 
+						                       I was a research fellow at the School of Computing, University of Leeds, Leeds,
+						                       UK. I have earned both Master and PhD degrees in computer science from Madan Mohan Malaviya University of Technology, India and the University of Birmingham, UK, respectively. 
+						                        Prior to pursuing my PhD, I gained valuable experience as a Lecturer at IMS College
+						                        Ghaziabad and a Teaching Staff (full-time guest faculty) at Gautam Buddha
+						                           University, India.</p> <br>
 
 
-                                            <p>My research focuses on Distributed Systems (e.g., Cloud Computing and Edge Computing environment ),
-						    including but not limited to Service-Based Distributed Software Systems. I am particularly interested
-						    in engineering QoS/SLA assurance, system performance and distributed resource management for composing 
-						    and scheduling large-scale software systems in these environments. Further, my research work applies economic
-						    theory (such as technical debt), computational optimization, and machine learning techniques to address emerging issues in the next generation distributed systems.</p>
-                                            <!-- load more button -->
+                                              <p>My research focuses on Distributed Systems (e.g., Cloud Computing and Edge Computing environment ),
+						                       including but not limited to Service-Based Distributed Software Systems. I am particularly interested
+						                         in engineering QoS/SLA assurance, system performance and distributed resource management for composing 
+						                        and scheduling large-scale software systems in these environments. Further, my research work applies economic
+						                       theory (such as technical debt), computational optimization, and machine learning techniques to address emerging issues in the next generation distributed systems.</p>
+                                              <!-- load more button -->
                                             <div id="load-posts11" class="cbp-l-loadMore-button ">
                                                 <a href="profile.html" class="cbp-l-loadMore-link site-btn">
                                                     Read More...
@@ -374,52 +465,6 @@ font-family: 'Exo 2', sans-serif; font-family: 'Ubuntu', sans-serif;
                                         </div>
                                     </section>
                                 </div>
-
-
-
-                                <div class="row">
-                                    <section class="about-me graybg line col-md-12 padding_30">
-                                        <div class="col-lg-12">
-                                            <div class="section-title">
-                                                <h2> Recent News </h2>
-                                            </div>
-
-                                            
-                                            <a target="_blank" href="">
-                                                <h3> Paper Accepted in IEEE TSC, 2023</h3>
-                                            </a>
-                                            <p> Our paper on "DebtCom: Technical Debt-Aware Service Recomposition in SaaS Cloud"
-                                                has been accepted to IEEE Transactions on Services Computing. Congratulations </p>
-                                            
-                                                <a target="_blank" href="">
-                                                    <h3> Paper Accepted in Elsevier JPDC, 2023</h3>
-                                                </a>
-                                                <p> Our paper on "Affinity-aware resource provisioning for long-running applications in shared clusters"
-                                                    has been accepted to Journal of Parallel and Distributed Computing. Congratulations </p>
-
-
-
-                                            <a target="_blank"
-                                                href="https://kumar-satish.github.io/images/SEAMS-2020.pdf">
-                                                <h3> Best Paper Award- SEAMS-2020</h3>
-                                            </a>
-                                            <p> Our paper on "DATESSO: Self-Adapting Service
-                                                Composition with Debt-Aware Two Levels Constraint Reasoning" won the
-                                                best student paper award in IEEE/ACM 15th SEAMS-2020, Seoul, South
-                                                Korea, 2020. </p>
-
-
-                                            <!-- load more button -->
-                                            <div id="load-posts11" class="cbp-l-loadMore-button ">
-                                                <a href="recent-news.html" class="cbp-l-loadMore-link site-btn">
-                                                    Read More...
-
-                                                </a>
-                                            </div> <br><br>
-                                        </div>
-                                    </section>
-                                </div>
-
 
                                 <!-- Selected publication section start..... -->
 
@@ -523,6 +568,28 @@ font-family: 'Exo 2', sans-serif; font-family: 'Ubuntu', sans-serif;
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
 
 
 </body>
